@@ -1,3 +1,3 @@
 # Aula---JS
-Repositório de lições de JS
+Repositório de lições em JS
 
