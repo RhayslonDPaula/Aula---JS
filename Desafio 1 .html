@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            Curso JavaScript
+        </title>
+    </head>
+    <body>
+        <script>
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
+
+            function Imprime (){
+            console.log(endereco);
+            };
+
+            Imprime();
+
+            function pares(x, y) {
+                 var i = x, z = y;
+                while (x<=y) {
+                   
+                    if((x % 2) === 0 ){
+                        console.log(x);
+                    };
+                    x++;
+                };
+            };
+            pares(32, 321);
+            function temHabilidade (skills) {
+               i = skills.indexOf("Javascript");
+
+                if(i <= 0){
+                        return true;
+                } else {
+                        return false;
+                }
+
+                
+            };
+            var skills = ["Javascript", "ReactJS", "React Native"];
+            console.log(temHabilidade(skills)); // true ou false
+
+            function experiencia(anos) {
+                if ((anos<=1) || (anos == 0) ) {
+                    return "Iniciante";
+                } else {
+                    if ((anos > 1) && ( anos <= 3)) {
+                        return "Intermediário";
+                        
+                    } else {
+                      if ((anos > 3)&&(anos <= 6)) {
+                        return "Avançado";
+                    } else {
+                            if (anos >= 7) {
+                                return "Jedi Master";
+                            }
+                                
+                        }  
+                    }
+                }
+            }
+            var anosEstudo = 7;
+            console.log(experiencia(anosEstudo));
+
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+                for (const value of usuarios) {
+
+                    console.log("O",value.nome ,"possui as habilidades:",value.habilidades.join());
+                }
+                
+        </script>
+    </body>
+</html>
