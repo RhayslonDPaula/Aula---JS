@@ -7,16 +7,16 @@
 </head>
 <body>
     <div id ="app">
-        <input id="nome">
+        <input id="nome"/>
     </div>
    
     <script>
-        var linkElement = document.createElement('a');
-        linkElement.setAttribute('href', 'http://rocketseat.com.br');
-        linkElement.setAttribute('title','Site da Rocketseat ');
+        var linkElement =document.createElement('a');
 
-        var textElement = document.createTextNode('Acessar site da Rocketseat');
-        linkElement.appendChild(textElement); 
+        linkElement.setAttribute('href','https://rocketseat.com.br/')
+
+        var textElement = document.createTextNode ('Acessar site da RocketSeat');
+        linkElement.appendChild(textElement);
 
         var containerElement = document.querySelector('#app');
         containerElement.appendChild(linkElement);
