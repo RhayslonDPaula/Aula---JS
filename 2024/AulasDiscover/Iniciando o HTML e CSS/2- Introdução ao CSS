@@ -1,0 +1,9 @@
+/*exemplo abaixo de uma declaração
+
+seletor seguido de par chaves ...
+
+*/
+
+body {
+  background: red;
+}
